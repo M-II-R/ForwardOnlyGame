@@ -75,14 +75,20 @@ def save_exists(num):
     """
     return all(
         (
-            os.path.exists("saves/save{}.dat".format(num)),
-            os.path.exists("saves/save{}.bak".format(num)),
-            os.path.exists("saves/save{}.dir".format(num)),
-            os.path.exists("saves/world{}.dat".format(num)),
-            os.path.exists("saves/world{}.bak".format(num)),
-            os.path.exists("saves/world{}.dir".format(num)),
+            os.path.exists("saves/save{}".format(num)),
+            os.path.exists("saves/world{}".format(num)),
         )
     )
+#    return all(
+#        (
+#            os.path.exists("saves/save{}.dat".format(num)),
+#            os.path.exists("saves/save{}.bak".format(num)),
+#            os.path.exists("saves/save{}.dir".format(num)),
+#            os.path.exists("saves/world{}.dat".format(num)),
+#            os.path.exists("saves/world{}.bak".format(num)),
+#            os.path.exists("saves/world{}.dir".format(num)),
+#        )
+#    )
 
 
 def take_random(list_):
